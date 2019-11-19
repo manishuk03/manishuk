@@ -1,0 +1,11 @@
+.stack-view{display:none;font-weight:bold}
+.heading-section{margin-bottom:1em}
+input.employeeIdText{background: transparent;
+    border: 0;
+    border-bottom: 1px dotted #cdcdcd;}
+@media screen and (max-width: 768px) {
+	.non-stack-view{display:none;}
+	.stack-view{display:inline-block;width:120px}
+	.dashboard-employee-table tr{float:left}
+	.dashboard-employee-table tr td{width:100%;display:inline-block;float:left}
+}

@@ -1,0 +1,9 @@
+<div class="container">
+	<div class="pagenotfound-block p5 text-center">
+		<img src="/assets/images/404.png" alt="Page not found" class="page-not-found-img" />
+		<h3>Oh!. Page not found</h3>
+		<a href="/login" role="button" class="btn btn-primary" *ngIf="!logintype">Go to login</a>
+		<a href="/dashboard" role="button" class="btn btn-primary"  *ngIf="logintype">Go to dashboard</a>
+	</div>
+</div>
+ 

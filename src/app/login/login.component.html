@@ -1,0 +1,52 @@
+<div class="loading" *ngIf="showLoading">
+	<div class="animateicon"></div>
+</div>
+<div class="container">
+	<!--START- Screen for Non Logged in User -->
+	<div class="login-container-block col-lg-5 " *ngIf="!isUserLoggedIn">
+		<div class="error-block col-12" *ngIf="message">
+			<div class="alert alert-danger" role="alert">{{message}}</div>
+		</div>
+		<div class="card">
+		  <img src="/assets/images/employeedashboardlogin.png" alt="login" class="loginEmployeeImg" />	
+		  <div class="card-body">
+			<h4 class="card-title text-center">Login</h4>
+			<hr />
+			<!--START Form Group-->
+			<form [formGroup]="loginForm" (ngSubmit)="loginSubmit()">
+			
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+					  <label for="username" class="input-group-text">Username</label>
+					</div>
+					<input type="text" class="form-control" name="username" formControlName="username">
+					<div class="clearfix"></div>
+					<div  class="d-none error-text">Username cannot be blank</div>
+				</div> 
+				
+				<div class="input-group mb-3" [ngClass]="{ 'has-error': loginForm.errors }">
+					<div class="input-group-prepend">
+					  <label for="loginpwd" class="input-group-text" >Password</label>
+					</div>
+					<input type="password" name="loginpwd" formControlName="loginpwd" class="form-control">
+					<div  class="d-none error-text">Password cannot be blank</div>
+				</div>
+				
+				<button class="btn btn-primary float-right" >Continue</button>
+			</form>
+		  </div>
+		</div>
+	</div>
+	
+	<!--START- Screen for Logged in User -->
+	<div class="login-active-block text-center" *ngIf="isUserLoggedIn">
+		<div class="card">
+		  <div class="card-body">
+		  <img src="/assets/images/alreadylogin.png" alt="login" class="alreadyloginImg" />	
+			<h4 class="card-title">Welcome Back</h4>
+			<h5 class="card-title">You are already logged-in</h5>
+			<a class="btn btn-primary" href="/dashboard" role="button">Go to dashboard</a>
+		</div>	
+		</div>	
+	</div>
+</div>

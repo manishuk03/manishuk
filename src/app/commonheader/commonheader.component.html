@@ -1,0 +1,20 @@
+<header class="container-fluid p-0">
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+	 <div class="col-lg-3 col-7 p-0 float-left">
+		 <a class="navbar-brand" href="#" class="float-left logo-block">
+			<img src="/assets/images/logo.png" alt="logo" />
+			<span>Employee Dashboard</span>
+		 </a>
+	 </div>
+	 <div class="col-lg-9 col-5 float-right" *ngIf="isUserLoggedIn">
+		<ul class="navbar-nav float-right">
+			<li class="nav-item">
+				<a class="nav-link" href="/dashboard" > Hi {{username}}</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="javascript:void(0)" (click)="logout()">logout</a>
+			</li>
+		</ul>
+	 </div>
+	</nav>
+</header>

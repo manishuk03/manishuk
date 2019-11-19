@@ -1,0 +1,105 @@
+.login-container-block{
+     display: flex;
+     width: 100%;
+     height: 100%;
+     flex-direction: column;
+     margin:auto;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+}
+ .login-container-block .card{
+    margin: auto;
+    box-shadow: 5px 7px 16px -1px #2b2b2b;
+    transition:0.5s
+}
+ .login-container-block .input-group-text {
+    width: 6em;
+}
+ img.loginEmployeeImg {
+    width: 182px;
+    position: absolute;
+    margin-left: -127px;
+    margin-top: 27px;
+}
+ .login-active-block .card{
+    border:0
+}
+/*START: Validation */
+ input.form-control.ng-touched.ng-invalid {
+     border-bottom: 1px solid red;
+     width:2em 
+}
+ input.form-control.ng-touched.ng-invalid ~ .error-text{
+    display:block!important
+}
+ .error-text {
+     width: 100%;
+     color: red;
+     font-size: 14px;
+     clear: both;
+     max-width: 100%;
+}
+ .error-block {
+     position: absolute;
+     z-index: 9999;
+     top: 130px;
+     left: 0;
+     right: 0;
+     width: 35em;
+     margin: 0 auto;
+}
+/*Start: Wait Icon css*/
+ .loading {
+     position: fixed;
+     z-index: 999;
+     height: 2em;
+     width: 2em;
+     overflow: visible;
+     margin: auto;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     transition:1s;
+}
+ .loading .animateicon{
+     border: 5px solid #f3f3f3;
+     border-radius: 50%;
+     border-top: 5px solid #3498db;
+     width: 60px;
+     height: 60px;
+     -webkit-animation: spin 2s linear infinite;
+     animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+     0% {-webkit-transform: rotate(0deg);}
+     100% {-webkit-transform: rotate(360deg);}
+}
+ @keyframes spin {
+     0% {transform: rotate(0deg);}
+     100% {transform: rotate(360deg);}
+}
+/* Transparent Overlay */
+ .loading:before {
+     content: '';
+     display: block;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #fff;
+     transition:1s;
+}
+
+@media only screen and (max-width: 720px) {
+     img.loginEmployeeImg {
+        margin-left: -14px;
+         margin-top: -138px;
+         z-index: -1;
+    }
+}
+ 
