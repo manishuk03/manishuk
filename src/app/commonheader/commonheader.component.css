@@ -1,0 +1,22 @@
+header{
+    margin-bottom:3em;
+}
+ .logo-block img{
+    width:45px;
+    height:45px
+}
+ .logo-block span{
+    color: #fff;
+     font-weight: bold;
+     display: inline-block;
+     margin-left: 5px;
+     font-size:16px
+}
+ .navbar-nav .nav-item .nav-link {
+     color: #fff;
+}
+ @media only screen and (max-width: 720px) {
+     li.nav-item {
+         line-height: 8px;
+    }
+}

@@ -1,0 +1,32 @@
+<div class="container">
+	<div class="heading-section">
+		<h1 class="text-info">Employee List</h1>
+	</div>
+	<div class="table-responsive-sm">          
+  <table class="dashboard-employee-table table table-striped table-bordered">
+    <thead class="non-stack-view">
+      <tr>
+        <th>Employee Id </th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Salary</th>
+        <th>Joining Date</th>
+        <th>Department</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let em of employeeList" >
+        <td><span class="stack-view">Employee Id:</span><input type="text" value="{{em.id}}" class="employeeIdText text-center" size="4" /></td>
+        <td><span class="stack-view">Firstname:</span>{{em.firstname}}</td>
+        <td><span class="stack-view">Lastname:</span>{{em.lastname}}</td>
+        <td><span class="stack-view">Salary:</span>{{em.salary | currency}}</td>
+        <td><span class="stack-view">Joining Date:</span>{{em.joiningdate | date}}</td>
+        <td><span class="stack-view">Department:</span>{{em.department}}</td>
+       
+       
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>

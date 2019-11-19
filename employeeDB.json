@@ -1,0 +1,64 @@
+{
+  "userlogin": [
+    {
+      "id": 1,
+      "username": "admin",
+      "loginpwd": "admin123",
+      "firstname": "Manish"
+    },
+    {
+      "id": 2,
+      "username": "test",
+      "loginpwd": "test",
+      "firstname": "Steve"
+    }
+  ],
+  "isloggedin": [
+    {
+      "id": 0,
+      "loggedin": false
+    },
+    {
+      "id": 1,
+      "loggedin": false
+    },
+    {
+      "id": 2,
+      "loggedin": false
+    }
+  ],
+  "employeedetails": [
+    {
+      "id": 1,
+      "firstname": "Ben",
+      "lastname": "Affleck",
+      "salary": "2400000",
+      "joiningdate": "01/21/2016",
+      "department": "Networking"
+    },
+    {
+      "id": 2,
+      "firstname": "Clark",
+      "lastname": "Kent",
+      "salary": "1400000",
+      "joiningdate": "01/21/2019",
+      "department": "Customer Experience"
+    },
+    {
+      "id": 3,
+      "firstname": "Steve",
+      "lastname": "Rogers",
+      "salary": "1400000",
+      "joiningdate": "07/29/2011",
+      "department": "Skill Development"
+    },
+    {
+      "id": 4,
+      "firstname": "Robert",
+      "lastname": "Downey",
+      "salary": "5000000",
+      "joiningdate": "05/01/2008",
+      "department": "Networking"
+    }
+  ]
+}
