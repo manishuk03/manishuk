@@ -26,7 +26,7 @@
     "core-js": "^2.5.4",
     "file-saver": "^2.0.2",
     "file-system": "^2.2.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "require": "^2.4.20",
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.5.3",
